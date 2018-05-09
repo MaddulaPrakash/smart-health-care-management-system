@@ -1,0 +1,339 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+.logo
+{
+width:1450px;
+height:100px;
+float:centre;
+}
+
+
+.logoimage
+{
+width:1280px;
+height:100px;
+}
+
+
+
+.message
+{
+background-color:green;
+width:1450px;
+height:100px;
+color:white;
+font-size:40pt;
+font-style:italic;
+position:inherit;
+text-align:center;
+padding-top: 20px;
+
+}
+
+.errMessage
+{
+background-color:Orange;
+width:800px;
+height:50px;
+color:red;
+font-size:30px;
+color:black;
+font-style:italic;
+text-align:center;
+float:center;
+		
+}
+#errMessage
+{
+background-color:white;
+width:800px;
+height:50px;
+color:red;
+font-size:30px;
+color:black;
+font-style:italic;
+text-align:center;
+float:center;
+		
+}
+
+body
+{
+background-color:Violet;
+}
+welcomepage
+{
+
+width:5450px;
+height:100px;
+}
+
+
+
+label
+{
+background-color:white;
+font-style:italic;
+text:100px;
+height:40px;
+width:100px;
+border-color: white;
+border-radius: 10px;
+border-style:solid;
+border-width:2px;
+}
+.webinfo 
+{
+background-color:green;
+font-size:20px;
+width:1000px;
+height:200px;
+}
+
+.empty
+{
+height:100px;
+background-color:white;
+}
+
+
+
+.message
+{
+background-color:green;
+width:1450px;
+height:100px;
+color:white;
+font-size:40pt;
+font-style:italic;
+position:inherit;
+text-align:center;
+padding-top: 20px;
+
+}
+
+
+
+.confirmationMessage
+{
+	background-color:orange;
+	font-size:20px;
+	color:black;
+	font-weight:bold;
+}
+
+.heading
+{
+	background-color:orange;
+	font-size:20px;
+	color:blue;
+	font-weight:bold;
+}
+
+.heading1
+{
+	background-color:orange;
+	font-size:15px;
+	color:blue;
+	font-weight:bold;
+	align:center;
+}
+
+.button {
+padding: 10px; 
+margin-right: 20px;
+margin-bottom:20px;
+font-family: Arial, Tahoma, Verdana, FreeSans, sans-serif;
+text-shadow:0 1px 1px rgba(1,0,0,1);
+display: inline-block;
+white-space: nowrap;
+line-height:1em;
+position:relative;
+outline: none;
+overflow: visible;
+cursor: pointer;
+border-radius: 10px;
+-moz-border-radius: 10px; 
+-webkit-border-radius:10px; 
+box-shadow:1px 1px 2px 0 #CCCCCC;
+-moz-box-shadow: 1px 1px 2px 0 #CCCCCC;
+-webkit-box-shadow: 1px 1px 2px 0 #CCCCCC;
+text-align:center;
+align:center;
+}
+
+.button_blue {
+border: 1px solid #305875;
+color: #FBFBFB;
+background-color: #3D6E97;
+align:center;
+}
+
+.button_blue:hover {
+color: #FBFBFB;
+opacity:0.9; 
+filter:alpha(opacity=90);
+align:center;
+}
+
+.button_about { 
+background-image: url(../images/button.png) 3px 5px no-repeat;
+padding-left: 35px;
+padding-right: 15px;
+align:center;
+}
+
+body.admin
+{
+	background-color:green;
+	background-image: url(adminimg.jpg) no-repeat;
+
+}
+
+
+body.welcome
+{
+		background-color:Maroon;
+		color:black;
+		font-style:italic;
+		font-weight:bold;
+		font-size:15px;
+}
+
+.register
+{
+	background-color:silver;
+	margin-left:400px;
+	margin-right:1000px;
+	margin-top:10px;
+	margin-bottom:100px;
+	width:600px;
+	border-color: black;
+	border-width: 3px;
+	border-radius:30px;
+	padding: 20px 10px 10px 10px;
+	border-style:groove;
+}
+
+.login
+{
+	background-color:silver;
+	margin-left:400px;
+	margin-right:600px;
+	margin-top:10px;
+	margin-bottom:100px;
+	width:500px;
+	border-color:black;
+	border-width: 3px;
+	border-radius:30px;
+	padding: 10px 10px 10px 10px;
+	border-style: groove;
+	
+}
+
+.confirmationMessage
+{
+	color: #4F8A10;
+    background-color: #DFF2BF;
+	margin: 10px 0px;
+	padding:12px;
+}
+
+#confirmationMessage
+{
+	color: #4F8A10;
+    background-color: #DFF2BF;
+	margin: 10px 0px;
+	padding:12px;
+
+}
+
+.logininfo
+{
+	width:405px;
+	height:150px;
+	float:right;
+	background-color: white;
+	border-style: groove;
+	border-radius:30px;
+	padding: 30px 30px 30px 30px;
+	margin-top: 60px;
+	margin-right: 79px;
+	
+}
+
+.button
+{
+background-color:#4285f4;
+font-size:20px;
+color:#fff;
+font-weight:bold;
+
+}
+
+.diamessage
+{
+	margin-top: 50px;
+	width:600px;
+	height:200px;
+	float:left;
+	font-weight:bold;
+	font-family:normal;
+	padding-left: 30px;
+	margin-left: 10px;
+}
+
+#appContainer{
+	margin-left:430px;
+	margin-right:10px;
+	margin-top:200px;
+	margin-bottom:10px;
+}
+
+.cordinatorBody{
+background-color:#F4F6F7;	
+}
+
+marquee {
+display: inline-block !important;
+}
+
+ #toolbar-innerCt{
+	margin-left:-77px !important;
+	margin-right:10px;
+}
+
+#toolbar{
+	margin-left:-234px !important;
+	margin-right:10px;
+}
+
+#Save{
+	width:100px;
+	padding-left:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	padding-right:10px;
+	margin-left:10px;
+	margin-bottom:10px;
+	margin-right:10px;
+	margin-top:10px;
+}
+
+.bodyCls{
+	background:
+	
+}
+
+.questionsCls{
+	background:;
+	color:;
+}
+
+.classification{
+background-color:yellow;	
+}
+
+#finalCordination{
+	color:black;
+	background-color:yellow;
+}
