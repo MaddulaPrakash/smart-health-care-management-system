@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/tx 
+     	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+     	http://www.springframework.org/schema/aop 
+     	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>classpath:sql/personalhealt.properties</value>
+		</property>
+	</bean>
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${database.drivername}" />
+		<property name="url" value="${database.url}" />
+		<property name="username" value="${database.username}" />
+		<property name="password" value="${database.password}" />
+	</bean>
+
+	<bean id="sqlPropertiesBean"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="sql/personalhealt" />
+	</bean>
+
+
+	<bean id="personalHealtDAOBean" class="com.dao.impl.PersonalHealtDAOImpl"
+		 init-method="init">
+		<property name="dataSource" ref="dataSource" />
+		<property name="sqlProperties" ref="sqlPropertiesBean" />
+	</bean>
+
+	<bean id="personalHealtServiceBean" class="com.service.impl.PersonalHealtServiceImpl">
+		<property name="personalHealtDao" ref="personalHealtDAOBean"></property>
+	</bean>
+
+	<bean id="personalHealtDelegateBean" class="com.delegate.impl.PersonalHealtDelegateImpl">
+		<property name="personalHealtService" ref="personalHealtServiceBean"></property>
+	</bean>
+
+	<bean id="personalHealtControllerBean" class="com.controller.impl.PersonalHealtControllerImpl">
+		<property name="personalHealtDelegate" ref="personalHealtDelegateBean"></property>
+	</bean>
+
+
+</beans>
+
+
+
+
